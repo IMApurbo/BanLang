@@ -265,5 +265,3 @@ a is the smallest and c is the largest
 Feel free to modify and extend the interpreter as needed. Enjoy coding in Banlang!
 
 ---
-
-This README should give users a clear understanding of how to use Banlang and test different features.
