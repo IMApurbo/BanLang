@@ -65,8 +65,6 @@ function runBanProgram(filePath: string) {
         const banCode = readBanFile(filePath);
         const jsCode = translateBanToJS(banCode);
 
-        // Output the translated JavaScript code
-        console.log('Translated JS Code:\n', jsCode);
 
         runJSCode(jsCode); // Execute the JS code
     } catch (error) {
