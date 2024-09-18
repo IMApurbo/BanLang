@@ -1,0 +1,14 @@
+shuru koro
+    dhoro a = 5;
+    dhoro b = 15;
+    dhoro c = 20;
+    jodi (a < b) {
+        jodi (b < c) {
+            dekhao "a is the smallest and c is the largest";
+        } othoba (b == c) {
+            dekhao "b and c are equal";
+        }
+    } othoba (a > b) {
+        dekhao "a is greater than b";
+    }
+sesh koro
