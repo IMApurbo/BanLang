@@ -32,8 +32,8 @@ function translateBanToJS(banCode: string): string {
     jsCode = jsCode.replace(/othoba\s+\((.+?)\)\s*{/g, 'else if ($1) {');
     jsCode = jsCode.replace(/ta na hole\s*{/g, ' else {');
 
-    // Replace loops (jotokkhon na)
-    jsCode = jsCode.replace(/jotokkhon na\s+\((.+?)\)\s*{/g, 'while ($1) {');
+    // Replace loops (jotokkhon)
+    jsCode = jsCode.replace(/jotokkhon\s+\((.+?)\)\s*{/g, 'while ($1) {');
     jsCode = jsCode.replace(/thamo;/g, 'break;');
     jsCode = jsCode.replace(/chaliye jao;/g, 'continue;');
 
