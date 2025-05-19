@@ -79,11 +79,11 @@ jodi (a > b) {
 
 ### Loops
 
-To create loops, use `jotokkhon na` for `while` and `thamo` for `break`.
+To create loops, use `jotokkhon` for `while` and `thamo` for `break`.
 
 **Syntax:**
 ```ban
-jotokkhon na (condition) {
+jotokkhon (condition) {
     // code to execute while condition is true
     thamo; // break out of the loop
 }
@@ -91,7 +91,7 @@ jotokkhon na (condition) {
 
 **Example:**
 ```ban
-jotokkhon na (a < 5) {
+jotokkhon (a < 5) {
     dekhao a;
     a += 1;
 }
@@ -160,7 +160,7 @@ a is greater than b
 ```ban
 shuru koro
     dhoro a = 0;
-    jotokkhon na (a < 5) {
+    jotokkhon (a < 5) {
         dekhao a;
         a += 1;
     }
@@ -183,9 +183,9 @@ Sofol hoyecho 🎉
 ```ban
 shuru koro
     dhoro x = 0;
-    jotokkhon na (x < 3) {
+    jotokkhon (x < 3) {
         dhoro y = 0;
-        jotokkhon na (y < 2) {
+        jotokkhon (y < 2) {
             jodi (x > y) {
                 dekhao "x: " + x + ", y: " + y;
             }
